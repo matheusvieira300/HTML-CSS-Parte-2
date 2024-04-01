@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+/* importando essa fonte do google fonts, e linkando no css, duas fontes*/
+
+
+
+* { /* reset css, estilo aplicado em todo o conteúdo da página*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh; /* altura da página 100 cem por cento viewport height*/
+    box-sizing: border-box; /* para nada sair do componente pai, o filho no caso*/
+    background-color: black; /* cor de fundo*/
+    color: #F6F6F6; /* cor do texto*/
+}
+
+.titulo-destaque { /* ponto. para mencionar que é uma classe e não uma tag html*/
+    color: #22D4FD;
+}
+
+.apresentacao {
+    margin:10% 15%; /* margem entre todos os componentes, o primeiro sempre é vertical
+    e o segundo horizontal*/
+    display: flex; /* por padrão ele alinha tudo como row, linha*/
+    align-items: center; /* para alinhar todos os componenentes no centro
+    a partir de um índice que seria o maior componente da página, e ele vai definir
+    o ponto central do alinhamento*/
+    justify-content: space-between; /* espaço entre componentes*/
+}
+
+.apresentacao__conteudo {
+    width: 615px; /* largura*/
+    /* height: ; altura */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;/*espaçamento de cada um dos componentes filhos*/
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif; /* imporntando a fonte para o class*/
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__links__link {
+    background-color: #22D4FD; /* cor de fundo botão*/
+    width: 280px;
+    text-align: center; /* alinhamento do texto no centro*/
+    border-radius: 16px;/*arredondamento da borda*/
+    font-size: 24px;
+    padding: 21.5px 0; /*sempre o primeiro valor de padding é do eixo vertical
+    e o segundo do eixo horizontal, padding é o espaçamento de um componente, preenchimnento dele*/
+    text-decoration: none;/*para retirar a decoração de Link, aquele sublinhado azul*/
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;/*peso da fonte*/
+}
